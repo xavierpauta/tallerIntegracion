@@ -1,5 +1,6 @@
 # Library.py
-from Book import Book
+
+from src.main.Book import Book
 
 class Library:
     def __init__(self):
@@ -9,6 +10,8 @@ class Library:
         self.catalog.append(book)
 
     def display_catalog(self):
+        catalog_output = ""
         for book in self.catalog:
             status = "Disponible" if book.available else "No Disponible"
-            print(f"{book.title} por {book.author} - {status}")
+            catalog_output += f"{book.title} by {book.author} - {status}\n"
+        return catalog_output

@@ -1,6 +1,6 @@
-# CheckoutSystem.py
+# Verificador.py
+from src.main.User import User
 from datetime import datetime, timedelta
-from User import User
 
 class CheckoutSystem:
     @staticmethod
