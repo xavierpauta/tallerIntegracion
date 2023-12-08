@@ -9,8 +9,6 @@ from src.main.User import User
 from datetime import datetime, timedelta
 
 
-
-
 def test_book_creation():
     book = Book("Title", "Author", 5)
     assert book.title == "Title"
